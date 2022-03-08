@@ -3,3 +3,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+}
+
+.header-items {
+  display: flex;
+}
+
+.header-items li {
+  padding-right: 1rem;
+  margin-right: 2rem;
+  list-style: none;
+}
