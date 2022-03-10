@@ -84,3 +84,39 @@ body {
   border: 1px solid black;
   padding: 1rem;
 }
+
+/* Modal display */
+.modal-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(224, 73, 73);
+  padding: 1rem 0;
+  background-color: aqua;
+}
+
+.modal-image {
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 40%;
+  height: 30vh;
+  margin-bottom: 1rem;
+}
+
+.modal-description {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.modal-header2,
+.modal-comments {
+  margin-bottom: 1rem;
+}
+
+.comment-form {
+  margin-top: 1rem;
+  display: block;
+}
