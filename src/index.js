@@ -1,26 +1,16 @@
 import './style.css';
 import img from './assets/logo.png';
+import renderCards from './modules/renderContent.js'
 
 const image = document.querySelector('.logo');
 image.innerHTML = `<img class="img-logo" src="${img}" alt="my logo">`;
 
-const modal = document.querySelectorAll('.grid-item');
 const displayModal = document.querySelector('.modal-content');
 const gridContainer = document.querySelector('.grid-container');
 const header = document.querySelector('.header');
 const footer = document.querySelector('.footer');
 
-modal.forEach((mode) => {
-  mode.addEventListener('click', (e) => {
-    e.preventDefault();
-    displayModal.style.display = 'block';
-    gridContainer.style.display = 'none';
-    header.style.display = 'none';
-    footer.style.display = 'none';
-  });
-});
-
-const spanClose = document.querySelector('.close');
+const spanClose = document.querySelector('.span-close');
 
 spanClose.addEventListener('click', (e) => {
   e.preventDefault();
@@ -29,3 +19,6 @@ spanClose.addEventListener('click', (e) => {
   header.style.display = 'flex';
   footer.style.display = 'block';
 });
+
+renderCards();
+console.log(gridContainer);
