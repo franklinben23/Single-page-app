@@ -1,5 +1,6 @@
 import main from './contentAPI.js';
-import renderImage from './createImg.js'
+import { renderImage } from './createImg.js'
+import modalTemplate from './popModal.js'
 
 const grid = document.querySelector('.grid-container');
 const displayModal = document.querySelector('.modal-content');
@@ -33,6 +34,7 @@ const renderCards = async () => {
     commentBtn.innerHTML = "comment";
     commentBtn.addEventListener('click', (e) => {
       e.preventDefault();
+      modalTemplate(el);
       displayModal.style.display = 'block';
       gridContainer.style.display = 'none';
       header.style.display = 'none';

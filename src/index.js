@@ -10,15 +10,4 @@ const gridContainer = document.querySelector('.grid-container');
 const header = document.querySelector('.header');
 const footer = document.querySelector('.footer');
 
-const spanClose = document.querySelector('.span-close');
-
-spanClose.addEventListener('click', (e) => {
-  e.preventDefault();
-  displayModal.style.display = 'none';
-  gridContainer.style.display = 'grid';
-  header.style.display = 'flex';
-  footer.style.display = 'block';
-});
-
 renderCards();
-console.log(gridContainer);
