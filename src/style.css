@@ -85,7 +85,7 @@ body {
   padding: 1rem;
 }
 
-/*Modal display */
+/* Modal display */
 .modal-items {
   display: flex;
   flex-direction: column;
@@ -111,7 +111,8 @@ body {
   margin-bottom: 2rem;
 }
 
-.modal-header2, .modal-comments {
+.modal-header2,
+.modal-comments {
   margin-bottom: 1rem;
 }
 
