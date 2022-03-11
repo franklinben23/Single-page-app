@@ -1,6 +1,6 @@
 import main from './contentAPI.js';
-import { renderImage } from './createImg.js'
-import popModal from './popModal.js'
+import { renderImage } from './createImg.js';
+import popModal from './popModal.js';
 
 const grid = document.querySelector('.grid-container');
 const displayModal = document.querySelector('.modal-content');
@@ -10,27 +10,27 @@ const footer = document.querySelector('.footer');
 const renderCards = async () => {
   grid.innerHTML = '';
   const dataList = await main();
-  dataList.forEach(el => {
-    const card = document.createElement("div");
-    card.classList.add("grid-item");
+  dataList.forEach((el) => {
+    const card = document.createElement('div');
+    card.classList.add('grid-item');
 
     renderImage(el.image.medium, card);
 
-    const nameLike = document.createElement("div");
+    const nameLike = document.createElement('div');
 
-    const showName = document.createElement("h3");
-    showName.classList.add("showname");
+    const showName = document.createElement('h3');
+    showName.classList.add('showname');
     showName.innerHTML = el.name;
 
     const likeIcon = document.createElement('i');
     likeIcon.classList.add('fas');
     likeIcon.classList.add('fa-heart');
 
-    nameLike.append(showName, likeIcon)
+    nameLike.append(showName, likeIcon);
 
-    const commentBtn = document.createElement("button");
-    commentBtn.classList.add("comment-btn");
-    commentBtn.innerHTML = "comment";
+    const commentBtn = document.createElement('button');
+    commentBtn.classList.add('comment-btn');
+    commentBtn.innerHTML = 'comment';
     commentBtn.addEventListener('click', (e) => {
       e.preventDefault();
       popModal(el);
@@ -75,9 +75,9 @@ const renderCards = async () => {
     // detailsList.append(showLang, showPremiere, showGenre, showTime);
     // card.append(showName, detailsList, showDesc);
 
-    card.append(nameLike, commentBtn)
+    card.append(nameLike, commentBtn);
     grid.append(card);
   });
 };
 /* Get the id, url, image: testSample.image.medium, name, language, runtime,premiered on:,  genre: testSample.genres[0], and summary  */
-export default renderCards
+export default renderCards;
