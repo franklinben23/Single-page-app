@@ -8,11 +8,17 @@ const displayModal = document.querySelector('.modal-content');
 const header = document.querySelector('.header');
 const footer = document.querySelector('.footer');
 
-const likeBunch = async (el, cont, likeCtr) => {
-  const count = await updateLikes(el.id);
-  likeCtr.innerHTML = '';
-  likeCtr.innerHTML = `${count} likes`;
-  cont.append(likeCtr);
+// const likeBunch = async (el, cont, likeCtr) => {
+//   const count = await updateLikes(el.id);
+//   likeCtr.innerHTML = '';
+//   likeCtr.innerHTML = `${count} likes`;
+//   cont.append(likeCtr);
+// };
+
+const likeCount = async (Id, cont) => {
+  const count = await updateLikes(Id);
+  cont.innerHTML = `${count} likes`;
+  console.log("what's wrong")
 };
 
 const renderCards = async () => {
@@ -33,15 +39,18 @@ const renderCards = async () => {
     const likeIcon = document.createElement('i');
     likeIcon.classList.add('fas');
     likeIcon.classList.add('fa-heart');
+
     const likeCounter = document.createElement("p");
     likeCounter.classList.add("like-counter");
-    likeBunch(el, nameLike, likeCounter);
-    likeIcon.addEventListener('click', async () => {
+
+    likeCount(el.id, likeCounter);
+
+    likeIcon.addEventListener('click', () => {
       postLike(el.id);
-      likeBunch(el, nameLike, likeCounter);
+      likeCount(el.id, likeCounter);
     });
 
-    nameLike.append(showName, likeIcon);
+    nameLike.append(showName, likeIcon, likeCounter);
 
     const commentBtn = document.createElement('button');
     commentBtn.classList.add('comment-btn');
