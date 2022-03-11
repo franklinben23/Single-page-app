@@ -1,10 +1,9 @@
 import main from './contentAPI.js';
 import { renderImage } from './createImg.js'
-import modalTemplate from './popModal.js'
+import popModal from './popModal.js'
 
 const grid = document.querySelector('.grid-container');
 const displayModal = document.querySelector('.modal-content');
-const gridContainer = document.querySelector('.grid-container');
 const header = document.querySelector('.header');
 const footer = document.querySelector('.footer');
 
@@ -34,12 +33,20 @@ const renderCards = async () => {
     commentBtn.innerHTML = "comment";
     commentBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      modalTemplate(el);
+      popModal(el);
       displayModal.style.display = 'block';
-      gridContainer.style.display = 'none';
+      grid.style.display = 'none';
       header.style.display = 'none';
       footer.style.display = 'none';
     });
+
+    // spanClose.addEventListener('click', (e) => {
+    //   e.preventDefault();
+    //   displayModal.style.display = 'none';
+    //   gridContainer.style.display = 'grid';
+    //   header.style.display = 'flex';
+    //   footer.style.display = 'block';
+    // });
 
     // const detailsList = document.createElement("ul");
     // detailsList.classList.add("details-list");

@@ -10,4 +10,5 @@ const gridContainer = document.querySelector('.grid-container');
 const header = document.querySelector('.header');
 const footer = document.querySelector('.footer');
 
+
 renderCards();
