@@ -63,7 +63,6 @@ const popModal = (element) => {
   const formInput = document.createElement('input');
   formInput.setAttribute('type', 'text');
   formInput.setAttribute('placeholder', 'Your Name');
-  // modalForm.classList.add('comment-form');
   modalForm.appendChild(formInput);
 
   const textArea = document.createElement('textarea');
