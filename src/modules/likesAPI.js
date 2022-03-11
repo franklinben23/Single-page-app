@@ -2,7 +2,7 @@ const invApiUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capsto
 
 const appID = 'meucUCU2jpjkDcWN5JDX';
 
-const PostLike = async (id) => {
+const postLike = async (id) => {
   const response = await fetch(
     `${invApiUrl}${appID}/likes`, {
       method: 'POST',
@@ -35,4 +35,4 @@ const updateLikes = async (id) => {
   return results
 };
 
-export { getLikes, PostLike, updateLikes, invApiUrl, appID }
+export { getLikes, postLike, updateLikes, invApiUrl, appID }

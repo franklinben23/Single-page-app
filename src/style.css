@@ -139,3 +139,7 @@ body {
   font-style: oblique;
   font-weight: bold;
 }
+
+.fas:hover {
+  cursor: pointer;
+}

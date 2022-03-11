@@ -1,6 +1,7 @@
 import main from './contentAPI.js';
 import { renderImage } from './createImg.js';
 import popModal from './popModal.js';
+import { getLikes, postLike, updateLikes } from './likesAPI.js'
 
 const grid = document.querySelector('.grid-container');
 const displayModal = document.querySelector('.modal-content');
@@ -25,6 +26,14 @@ const renderCards = async () => {
     const likeIcon = document.createElement('i');
     likeIcon.classList.add('fas');
     likeIcon.classList.add('fa-heart');
+    likeIcon.addEventListener('click', async () => {
+      postLike(el.id);
+      const likeCounter = document.createElement("p");
+      likeCounter.classList.add("like-counter");
+      const count = await updateLikes(el.id);
+      likeCounter.innerHTML = `${count} likes`;
+      nameLike.append(likeCounter);
+    });
 
     nameLike.append(showName, likeIcon);
 
