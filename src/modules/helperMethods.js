@@ -1,5 +1,6 @@
 import { getComments } from './commentsAPI.js';
 import { updateLikes } from './likesAPI.js';
+import main from './contentAPI.js'
 
 const renderComments = async (id, modalCont) => {
   const comments = await getComments(id);
@@ -28,4 +29,10 @@ const likeCount = async (Id, cont) => {
   cont.innerHTML = `${count} likes`;
 };
 
-export { renderComments, likeCount, commentsCount };
+const artCounter = async () => {
+  const artArr = await main();
+  const artsLength = artArr.length;
+  return artsLength;
+};
+
+export { renderComments, likeCount, commentsCount, artCounter };
