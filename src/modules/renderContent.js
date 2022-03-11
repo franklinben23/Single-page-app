@@ -8,6 +8,13 @@ const displayModal = document.querySelector('.modal-content');
 const header = document.querySelector('.header');
 const footer = document.querySelector('.footer');
 
+const likeBunch = async (el, cont, likeCtr) => {
+  const count = await updateLikes(el.id);
+  likeCtr.innerHTML = '';
+  likeCtr.innerHTML = `${count} likes`;
+  cont.append(likeCtr);
+};
+
 const renderCards = async () => {
   grid.innerHTML = '';
   const dataList = await main();
@@ -26,13 +33,12 @@ const renderCards = async () => {
     const likeIcon = document.createElement('i');
     likeIcon.classList.add('fas');
     likeIcon.classList.add('fa-heart');
+    const likeCounter = document.createElement("p");
+    likeCounter.classList.add("like-counter");
+    likeBunch(el, nameLike, likeCounter);
     likeIcon.addEventListener('click', async () => {
       postLike(el.id);
-      const likeCounter = document.createElement("p");
-      likeCounter.classList.add("like-counter");
-      const count = await updateLikes(el.id);
-      likeCounter.innerHTML = `${count} likes`;
-      nameLike.append(likeCounter);
+      likeBunch(el, nameLike, likeCounter);
     });
 
     nameLike.append(showName, likeIcon);
