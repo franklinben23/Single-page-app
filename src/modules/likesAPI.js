@@ -14,7 +14,7 @@ const postLike = async (id) => {
       },
     },
   );
-  return response
+  return response;
 };
 
 const getLikes = async () => {
@@ -32,7 +32,9 @@ const updateLikes = async (id) => {
     }
   });
 
-  return results
+  return results;
 };
 
-export { getLikes, postLike, updateLikes, invApiUrl, appID }
+export {
+  getLikes, postLike, updateLikes, invApiUrl, appID,
+};

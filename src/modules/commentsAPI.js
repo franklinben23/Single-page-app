@@ -14,7 +14,7 @@ const postComment = async (id, name, body) => {
       },
     },
   );
-  return response
+  return response;
 };
 
 const getComments = async (id) => {
@@ -23,4 +23,4 @@ const getComments = async (id) => {
   return comments;
 };
 
-export { postComment, getComments }
+export { postComment, getComments };
