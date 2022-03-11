@@ -32,7 +32,7 @@ const updateLikes = async (id) => {
     }
   });
 
-  console.log(results)
+  return results
 };
 
-export {getLikes, PostLike, updateLikes }
+export { getLikes, PostLike, updateLikes, invApiUrl, appID }
