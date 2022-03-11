@@ -45,9 +45,9 @@ const renderCards = async () => {
 
     likeCount(el.id, likeCounter);
 
-    likeIcon.addEventListener('click', () => {
-      postLike(el.id);
-      likeCount(el.id, likeCounter);
+    likeIcon.addEventListener('click', async () => {
+      await postLike(el.id);
+      await likeCount(el.id, likeCounter);
     });
 
     nameLike.append(showName, likeIcon, likeCounter);
