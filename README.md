@@ -7,7 +7,7 @@
 ![Screenshot 2022-03-11 at 23-32-26 Show page](https://user-images.githubusercontent.com/68623189/158002619-8c98170c-ecf6-48d6-a8bd-86ff8a8bfaa0.png)
 
 # Project Video link:
-[link to video](https://user-images.githubusercontent.com/68623189/158003358-ba92e56a-75cc-48f0-a868-b63b157616b2.mp4)
+[link to video](https://user-images.githubusercontent.com/68623189/158005667-a5cedbc1-8c11-4b8b-bc22-6eea1767c6ea.mp4)
 
 > Description of the project.
 
