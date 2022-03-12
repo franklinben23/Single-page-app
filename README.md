@@ -1,14 +1,14 @@
-# Leaderboard-list-App
+# Javascript Capstone: shows Site.
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard-list-App with Webpack and API.
+# interactive wepApp with Webpack and APIs.
 
-![screenshot](./src/leaderboard2.png)
+![Screenshot 2022-03-11 at 23-32-26 Show page](https://user-images.githubusercontent.com/68623189/158002619-8c98170c-ecf6-48d6-a8bd-86ff8a8bfaa0.png)
 
 > Description of the project.
 
-In this project, i created the structure of the Leaderboard-list-App and implemented the ADD and REFRESH functionalities, while consuming the given API.
-
+In this project, We created an interactive web app using multiple API's to get and render info and multimedia, as well as implement like and comment features.
 
 ## Built With
 
@@ -23,30 +23,55 @@ In this project, i created the structure of the Leaderboard-list-App and impleme
 - Technologies used
   Use of webpack, API and ES6 syntax.
 
+- APIs used
+  [TV maze API: used for getting the show information.](https://www.tvmaze.com/api)
+  [interactive API: used for like and commenting features.](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270)
+
 ## Live Demo (if available)
 
-[Live Demo Link](https://charlyeneh.github.io/Leaderboard-list-App/dist/)
+[Live Demo Link](https://franklinben23.github.io/js-capstone/dist/)
+
 ## Getting Started
 
 Clone the Repo and power on the live-server to view the App or click on the live demo link.
 
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-  Install a code editor and have a working browser.
-### Setup
-  Clone the Repo and power up the live-server to view the project on your browser.
-### Install
-  Install a code editor and a browser.
-  Install a packege manager - npm.
+
+Install a code editor and have a working browser.
+
+## Getting started
+
+To get a local copy up and running follow these simple example steps.
+
+1- Navigate to the button on the top right green "code" button.
+
+2- In the drop down menu choose "Download Zip" or clone it using git using the following command.
+
+$ git clone git@github.com:franklinben23/js-capstone.git
+
+3- After extracting the files, you'll have my project on your local machine.
+
+4- to run the project you'll need to use the following command in your terminal to set up the node modules.
+
+$ npm run start
+
+5- after opening the project in the localHost using live server, you might have to click the dist folder to see the project.
+
+6- for development only purposes: $ npm run serve in the terminal.
+
 ### Usage
-  This App manages the score board in a game of several players.
+
+This app will present you with a cover full of many movies and shows directly loaded from the API, you can also check out their details by clicking on them.
+
+This app also lets you like and comment on any show poster you want, also to see the likes and comments of other users.
+
 ### Deployment
-  This App was deployed using the github apps deployment. But you can use other options.
 
+This App was deployed using the github apps deployment. But you can also run "npm run start" in your terminal after the setup process.
 
-## Author
+## Authors
 
 👤 **Eneh Charles Chukwunweike**
 
@@ -54,11 +79,16 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@twitterhandle](https://twitter.com/ProgrammerBaby?s=09)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/charles-chukwunweike-eneh-5345a2147)
 
+👤 **Franklin Benjamin**
+
+- GitHub: [@franklinben23](https://github.com/franklinben23)
+- Twitter: [@franklin2302](https://twitter.com/franklin2302)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/charlyeneh/Leaderboard-list-App/issues/new).
+Feel free to check the [issues page](https://github.com/franklinben23/js-capstone/issues).
 
 ## Show your support
 
@@ -72,3 +102,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
+This project is [MIT](./MIT.md) licensed.
