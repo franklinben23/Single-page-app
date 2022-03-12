@@ -24,9 +24,8 @@ In this project, We created an interactive web app using multiple API's to get a
   Use of webpack, API and ES6 syntax.
 
 - APIs used
-  [TV maze API: used for getting the show information.](https://www.tvmaze.com/api)
-  
-  [interactive API: used for like and commenting features.](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270)
+  [TV maze API: used for getting the show information.](https://www.tvmaze.com/api).
+  [Interactive API: used for like and commenting features.](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270).
 
 ## Live Demo (if available)
 
