@@ -16,8 +16,8 @@ describe('Testing comments counter function', () => {
       item_id: 'item3',
       username: 'Franklin',
       comment: 'Hello worldddddd',
-    }
-  ];
+    },
+    ];
     const itesmLength = items.length;
     const res = commentCounter(items);
     expect(res).toBe(itesmLength);

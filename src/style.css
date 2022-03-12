@@ -140,6 +140,8 @@ body {
   font-weight: bold;
 }
 
-.fas:hover {
+.fas:hover,
+.comment-btn:hover,
+.span-close:hover {
   cursor: pointer;
 }

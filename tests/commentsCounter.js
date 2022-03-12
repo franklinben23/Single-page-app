@@ -1,7 +1,3 @@
-import { commentsCount } from "../src/modules/helperMethods";
+const commentCounter = (commentList) => commentList.length;
 
-const commentCounter = (commentList) => {
-  return commentList.length;
-}
-
-export default commentCounter
+export default commentCounter;
