@@ -19,7 +19,7 @@ const postComment = async (id, name, body) => {
 
 const getComments = async (id) => {
   const commentArr = await fetch(`${invApiUrl}${appID}/comments?item_id=${id}`);
-  const comments = await commentArr.json();
+  const comments = commentArr.json();
   return comments;
 };
 
