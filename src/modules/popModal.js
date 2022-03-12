@@ -79,7 +79,8 @@ const popModal = (element) => {
 
   ItemsCont.append(closeSpan);
   renderImage2(element.image.medium, ItemsCont);
-  ItemsCont.append(showTitle, elementItems, modalCommentHeader);
+  ItemsCont.append(
+    showTitle, elementItems, modalCommentHeader);
   ItemsCont.append(modalCommentContainer, modalFormHeader, modalForm);
   displayModal.append(ItemsCont);
   elementItems.append(showLang, showPremiere, showGenre, showTime, showDesc);
